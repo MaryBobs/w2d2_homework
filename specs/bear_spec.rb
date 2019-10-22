@@ -18,6 +18,10 @@ def test_bear_has_type
   assert_equal("Great Bear", @bear1.type)
 end
 
+def test_stomach_is_empty
+  assert_equal(0, @bear1.fish_eaten())
+end
+
 
 
 
