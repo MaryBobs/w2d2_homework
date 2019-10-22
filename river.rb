@@ -1,6 +1,6 @@
 class River
 
-attr_reader :name
+attr_reader :name, :river_stock
 
 def initialize(name)
   @name = name
@@ -15,7 +15,9 @@ def add_fish(fish)
   return @river_stock.push(fish)
 end
 
-
+def lose_fish(fish)
+  @river_stock.delete(fish)
+end
 
 
 

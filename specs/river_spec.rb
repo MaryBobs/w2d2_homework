@@ -32,8 +32,12 @@ def test_add_fish_to_river
   assert_equal(2, @river1.count_fish())
 end
 
-
-
+def test_lose_fish_from_river
+  @river1.add_fish(@fish1)
+  @river1.add_fish(@fish2)
+  @river1.lose_fish(@fish1)
+  assert_equal(1, @river1.count_fish())
+end
 
 
 
