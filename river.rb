@@ -11,6 +11,10 @@ def count_fish()
   @river_stock.count
 end
 
+def add_fish(fish)
+  return @river_stock.push(fish)
+end
+
 
 
 
