@@ -7,7 +7,9 @@ def initialize(name)
   @river_stock = []
 end
 
-
+def count_fish()
+  @river_stock.count
+end
 
 
 
