@@ -23,31 +23,20 @@ def test_if_river_has_name
 end
 
 def test_count_fish_in_river
-  assert_equal(0, @river1.count_fish())
+  assert_equal(0, @river1.fish_count())
 end
 
 def test_add_fish_to_river
   @river1.add_fish(@fish)
   @river1.add_fish(@fish)
-  assert_equal(2, @river1.count_fish())
+  assert_equal(2, @river1.fish_count())
 end
 
 def test_lose_fish_from_river
   @river1.add_fish(@fish1)
   @river1.add_fish(@fish2)
   @river1.lose_fish(@fish1)
-  assert_equal(1, @river1.count_fish())
+  assert_equal(1, @river1.fish_count())
 end
-
-
-
-
-
-
-
-
-
-
-
 
 end

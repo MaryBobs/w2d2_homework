@@ -8,7 +8,7 @@ def initialize(name,type)
   @stomach = []
 end
 
-def fish_in_stomach
+def food_count
   return @stomach.count()
 end
 
@@ -21,6 +21,10 @@ def take_fish_from_river(river)
     eat_fish(fish)
     river.lose_fish(fish)
   end
+  end
+
+  def roar
+    return "I am #{@name} the #{@type}. Hear me ROAR!!"
   end
 
 

@@ -19,15 +19,4 @@ def test_if_fish_has_name
 end
 
 
-
-
-
-
-
-
-
-
-
-
-
 end
